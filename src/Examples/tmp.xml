@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<ShipRequest>
+    <Login>
+        <Username>user</Username>
+        <Password>pass</Password>
+    </Login>
+    <Test>true</Test>
+    <ClientID>907</ClientID>
+    <Reference>904555</Reference>
+    <ShipTo>
+        <Name>&#x674E;&#x4E09;</Name>
+        <Attention>&#x674E;&#x4E09;</Attention>
+        <Address1>aaaa</Address1>
+        <Address2></Address2>
+        <Address3></Address3>
+        <City>&#x868C;&#x57E0;&#x5E02;</City>
+        <State>&#x5B89;&#x5FBD;&#x7701;</State>
+        <PostalCode>233002</PostalCode>
+        <Country>CN</Country>
+        <Phone>008613025935182</Phone>
+        <Email>orders@test.com</Email>
+        <Residential>true</Residential>
+    </ShipTo>
+    <ShippingLane>
+        <Region>Client EMC</Region>
+        <OriginFacilityCode>130</OriginFacilityCode>
+    </ShippingLane>
+    <ShipMethod>LGINTSTD</ShipMethod>
+    <ShipmentInsuranceFreight>20.65</ShipmentInsuranceFreight>
+    <ItemsCurrency>EUR</ItemsCurrency>
+    <LabelFormat>PDF</LabelFormat>
+    <LabelEncoding>LINKS</LabelEncoding>
+    <AdditionalFields>
+        <Field1>Any type of data</Field1>
+        <Field2>Purchased with Credit Card</Field2>
+        <Field3>99000029327172321</Field3>
+        <Field4>123198012</Field4>
+        <Field5>Stored information</Field5>
+    </AdditionalFields>
+    <Packages>
+        <Package>
+            <WeightUnit>LB</WeightUnit>
+            <Weight>4.5</Weight>
+            <DimensionsUnit>IN</DimensionsUnit>
+            <Height>12</Height>
+            <PackageReference>98233312</PackageReference>
+        </Package>
+        <Package>
+            <WeightUnit>LB</WeightUnit>
+            <Weight>4.5</Weight>
+            <DimensionsUnit>IN</DimensionsUnit>
+            <Height>12</Height>
+            <PackageReference>98233312</PackageReference>
+        </Package>
+    </Packages>
+    <Items>
+        <Item>
+            <Sku>7224059</Sku>
+            <Quantity>2</Quantity>
+            <UnitPrice>93.99</UnitPrice>
+            <Description>Women's Shoes</Description>
+            <HSCode>640399.30.00</HSCode>
+            <CountryOfOrigin>CN</CountryOfOrigin>
+        </Item>
+        <Item>
+            <Sku>7224059</Sku>
+            <Quantity>2</Quantity>
+            <UnitPrice>93.99</UnitPrice>
+            <Description>Women's Shoes</Description>
+            <HSCode>640399.30.00</HSCode>
+            <CountryOfOrigin>CN</CountryOfOrigin>
+        </Item>
+        <Item>
+            <Sku>7224059</Sku>
+            <Quantity>2</Quantity>
+            <UnitPrice>93.99</UnitPrice>
+            <Description>Women's Shoes</Description>
+            <HSCode>640399.30.00</HSCode>
+            <CountryOfOrigin>CN</CountryOfOrigin>
+        </Item>
+    </Items>
+    <FreightDetails>
+        <ProNumber>LGBR020409E</ProNumber>
+        <PieceUnit>Pallet</PieceUnit>
+    </FreightDetails>
+</ShipRequest>
