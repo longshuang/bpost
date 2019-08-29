@@ -4,7 +4,10 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.0.0",
-        "wappr/logger": "^1.2"
+        "wappr/logger": "^1.2",
+        "ext-curl": "*",
+        "ext-dom": "*"
+
     },
     "repositories": {
         "packagist": {
