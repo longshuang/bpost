@@ -6,7 +6,10 @@
         "php": ">=7.0.0",
         "wappr/logger": "^1.2",
         "ext-curl": "*",
-        "ext-dom": "*"
+        "ext-dom": "*",
+        "ext-json": "*",
+        "ext-simplexml": "*",
+        "ext-libxml": "*"
 
     },
     "repositories": {

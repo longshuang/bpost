@@ -49,7 +49,7 @@ class XmlBPost
 
         //测试 节点
         $test = $xml->createElement('Test');
-        $testV = $xml->createTextNode('true');
+        $testV = $xml->createTextNode($data['test']);
         $test->appendChild($testV);
 
         //创建客户端ID 节点
@@ -120,18 +120,18 @@ class XmlBPost
         $region->appendChild($regionV);
         $shippingLane->appendChild($region);
         $originFacilityCode = $xml->createElement('OriginFacilityCode');
-        $originFacilityCodeV = $xml->createTextNode('130');
+        $originFacilityCodeV = $xml->createTextNode('');
         $originFacilityCode->appendChild($originFacilityCodeV);
         $shippingLane->appendChild($originFacilityCode);
 
         //shipMethod 节点
         $shipMethod = $xml->createElement('ShipMethod');
-        $shipMethodV = $xml->createTextNode('LGINTSTD');
+        $shipMethodV = $xml->createTextNode($data['shipMethod']);
         $shipMethod->appendChild($shipMethodV);
 
         //ShipmentInsuranceFreight 节点
         $shipmentInsuranceFreight = $xml->createElement('ShipmentInsuranceFreight');
-        $shipmentInsuranceFreightV = $xml->createTextNode('20.65');
+        $shipmentInsuranceFreightV = $xml->createTextNode('');
         $shipmentInsuranceFreight->appendChild($shipmentInsuranceFreightV);
 
         //ItemsCurrency 节点
