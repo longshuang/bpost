@@ -23,7 +23,7 @@ class XmlBPost
             self::$instance = new self();
         }
         if (empty(self::$instance->xml)) {
-            self::$instance->xml = new \DOMDocument('1.0');
+            self::$instance->xml = new \DOMDocument('1.0', 'utf-8');
         }
         return self::$instance;
     }
@@ -126,7 +126,7 @@ class XmlBPost
 
         //shipMethod 节点
         $shipMethod = $xml->createElement('ShipMethod');
-        $shipMethodV = $xml->createTextNode($data['shipMethod']);
+        $shipMethodV = $xml->createTextNode($data['shipTo']['shipMethod']);
         $shipMethod->appendChild($shipMethodV);
 
         //ShipmentInsuranceFreight 节点
@@ -232,27 +232,27 @@ class XmlBPost
             $item = $xml->createElement('Item');
             //sku
             $sku = $xml->createElement('Sku');
-            $skuV = $xml->createTextNode('7224059');
+            $skuV = $xml->createTextNode($data['items'][$i - 1]['sku']);
             $sku->appendChild($skuV);
             $item->appendChild($sku);
             //quantity 数量
             $quantity = $xml->createElement('Quantity');
-            $quantityV = $xml->createTextNode('2');
+            $quantityV = $xml->createTextNode($data['items'][$i - 1]['quantity']);
             $quantity->appendChild($quantityV);
             $item->appendChild($quantity);
             //UnitPrice
             $unitPrice = $xml->createElement('UnitPrice');
-            $unitPriceV = $xml->createTextNode('93.99');
+            $unitPriceV = $xml->createTextNode($data['items'][$i - 1]['unitPrice']);
             $unitPrice->appendChild($unitPriceV);
             $item->appendChild($unitPrice);
             //Description
             $description = $xml->createElement('Description');
-            $descriptionV = $xml->createTextNode("Women's Shoes");
+            $descriptionV = $xml->createTextNode($data['items'][$i - 1]['description']);
             $description->appendChild($descriptionV);
             $item->appendChild($description);
             //HSCode
             $hSCode = $xml->createElement('HSCode');
-            $hSCodeV = $xml->createTextNode('640399.30.00');
+            $hSCodeV = $xml->createTextNode($data['items'][$i - 1]['hSCode']);
             $hSCode->appendChild($hSCodeV);
             $item->appendChild($hSCode);
             //CountryOfOrigin
