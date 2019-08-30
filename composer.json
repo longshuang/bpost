@@ -21,9 +21,6 @@
     "autoload": {
         "psr-4": {
             "nlebpost\\": "src/"
-        },
-        "files": [
-            "src/Helpers/Common.php"
-        ]
+        }
     }
 }
