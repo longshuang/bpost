@@ -149,32 +149,6 @@ class XmlBPost
         $labelEncodingV = $xml->createTextNode('LINKS');
         $labelEncoding->appendChild($labelEncodingV);
 
-        //备注字段
-        $additionalFields = $xml->createElement('AdditionalFields');
-        if (!empty($data['additionalFields'])) {
-            $field1 = $xml->createElement('Field1');
-            $field1V = $xml->createTextNode($data['additionalFields']['field1']);
-            $field1->appendChild($field1V);
-            $additionalFields->appendChild($field1);
-            $field2 = $xml->createElement('Field2');
-            $field2V = $xml->createTextNode($data['additionalFields']['field2']);
-            $field2->appendChild($field2V);
-            $additionalFields->appendChild($field2);
-            $field3 = $xml->createElement('Field3');
-            $field3V = $xml->createTextNode($data['additionalFields']['field3']);
-            $field3->appendChild($field3V);
-            $additionalFields->appendChild($field3);
-            $field4 = $xml->createElement('Field4');
-            $field4V = $xml->createTextNode($data['additionalFields']['field4']);
-            $field4->appendChild($field4V);
-            $additionalFields->appendChild($field4);
-            $field5 = $xml->createElement('Field5');
-            $field5V = $xml->createTextNode($data['additionalFields']['field5']);
-            $field5->appendChild($field5V);
-            $additionalFields->appendChild($field5);
-        }
-
-
         $shipRequest->appendChild($login);
         $shipRequest->appendChild($test);
         $shipRequest->appendChild($clientId);
@@ -186,7 +160,6 @@ class XmlBPost
         $shipRequest->appendChild($itemsCurrency);
         $shipRequest->appendChild($labelFormat);
         $shipRequest->appendChild($labelEncoding);
-        $shipRequest->appendChild($additionalFields);
 
         //包裹节点
         $packageCount = count($data['packages']);
