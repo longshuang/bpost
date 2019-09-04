@@ -230,7 +230,7 @@ class XmlBPost
             $item->appendChild($hSCode);
             //CountryOfOrigin
             $countryOfOrigin = $xml->createElement('CountryOfOrigin');
-            $countryOfOriginV = $xml->createTextNode('CN');
+            $countryOfOriginV = $xml->createTextNode($data['items'][$i - 1]['countryOfOrigin']);
             $countryOfOrigin->appendChild($countryOfOriginV);
             $item->appendChild($countryOfOrigin);
 
