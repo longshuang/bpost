@@ -131,7 +131,7 @@ class XmlBPost
 
         //ShipmentInsuranceFreight 节点
         $shipmentInsuranceFreight = $xml->createElement('ShipmentInsuranceFreight');
-        $shipmentInsuranceFreightV = $xml->createTextNode('');
+        $shipmentInsuranceFreightV = $xml->createTextNode($data['shipmentInsuranceFreight']);
         $shipmentInsuranceFreight->appendChild($shipmentInsuranceFreightV);
 
         //ItemsCurrency 节点
